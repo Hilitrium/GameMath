@@ -1,9 +1,0 @@
-﻿  Person.cpp
-  main.cpp
-  Generating Code...
-LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
-sfw.lib(gl_core_4_4.obj) : warning LNK4099: PDB 'nsfw2draw.pdb' was not found with 'sfw.lib(gl_core_4_4.obj)' or at 'C:\Users\s179063\Source\Repos\OOP\GameMath\Debug\nsfw2draw.pdb'; linking object as if no debug info
-sfw.lib(crenderutils.obj) : warning LNK4099: PDB 'nsfw2draw.pdb' was not found with 'sfw.lib(crenderutils.obj)' or at 'C:\Users\s179063\Source\Repos\OOP\GameMath\Debug\nsfw2draw.pdb'; linking object as if no debug info
-sfw.lib(sfwdraw.obj) : warning LNK4099: PDB 'nsfw2draw.pdb' was not found with 'sfw.lib(sfwdraw.obj)' or at 'C:\Users\s179063\Source\Repos\OOP\GameMath\Debug\nsfw2draw.pdb'; linking object as if no debug info
-  X-TestGame.vcxproj -> C:\Users\s179063\Source\Repos\OOP\GameMath\Debug\X-TestGame.exe
-  X-TestGame.vcxproj -> C:\Users\s179063\Source\Repos\OOP\GameMath\Debug\X-TestGame.pdb (Partial PDB)
