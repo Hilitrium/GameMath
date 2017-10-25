@@ -1,0 +1,10 @@
+﻿  vec3.cpp
+  vec2.cpp
+  mat3.cpp
+c:\users\s179063\source\repos\oop\gamemath\mathlib\mat3.cpp(92): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  main.cpp
+  change.cpp
+  Generating Code...
+c:\users\s179063\source\repos\oop\gamemath\mathlib\vec2.cpp(33): warning C4172: returning address of local variable or temporary: result
+c:\users\s179063\source\repos\oop\gamemath\mathlib\vec2.cpp(43): warning C4172: returning address of local variable or temporary: result
+  MathLib.vcxproj -> C:\Users\s179063\Source\Repos\OOP\GameMath\x64\Debug\MathLib.lib

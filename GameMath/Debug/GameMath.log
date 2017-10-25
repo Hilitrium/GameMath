@@ -1,0 +1,6 @@
+﻿  Main.cpp
+c:\users\s179063\source\repos\oop\gamemath\gamemath\math.h(16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+c:\users\s179063\source\repos\oop\gamemath\gamemath\math.h(20): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+c:\users\s179063\source\repos\oop\gamemath\gamemath\main.cpp(16): warning C4305: 'argument': truncation from 'double' to 'float'
+  GameMath.vcxproj -> C:\Users\s179063\Source\Repos\OOP\GameMath\Debug\01-MathReview.exe
+  GameMath.vcxproj -> C:\Users\s179063\Source\Repos\OOP\GameMath\Debug\01-MathReview.pdb (Partial PDB)
