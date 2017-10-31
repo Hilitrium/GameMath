@@ -1,13 +1,6 @@
-﻿  vec2.cpp
-  Generating Code...
-c:\users\s179063\source\repos\gamemath3\mathlib\vec2.cpp(44): warning C4172: returning address of local variable or temporary: result
-c:\users\s179063\source\repos\gamemath3\mathlib\vec2.cpp(34): warning C4172: returning address of local variable or temporary: result
-c:\users\s179063\source\repos\gamemath3\mathlib\vec2.cpp(53): warning C4172: returning address of local variable or temporary: result
-c:\users\s179063\source\repos\gamemath3\mathlib\vec2.cpp(63): warning C4172: returning address of local variable or temporary: result
-  Compiling...
-  vec3.cpp
+﻿  vec3.cpp
   mat3.cpp
-c:\users\s179063\source\repos\gamemath3\mathlib\mat3.cpp(92): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\s179063\source\repos\gamemath3\mathlib\mat3.cpp(118): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   main.cpp
   Generating Code...
 main.obj : warning LNK4006: "int __cdecl min(int,int)" (?min@@YAHHH@Z) already defined in mathutils.obj; second definition ignored

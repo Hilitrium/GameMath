@@ -7,15 +7,16 @@
 #include <string>
 #include <cstring>
 #include <cassert>
+#include "shapes.h"
 int main()
 {
 	sfw::initContext();
 
 	Transform transform;
 	Rigidbody rigidbody;
-
+	circle c = { {0,0},1 };
 	transform.position = vec2{ 400, 300 };
-
+	
 	while (sfw::stepContext())
 	{
 		float dt = sfw::getDeltaTime();
@@ -26,9 +27,9 @@ int main()
 		vec2 AppliedForce = transform.getGlobalTransform()[1].xy * 50;
 		//std::cout << "X:" << AppliedForce.x << "Y: " << AppliedForce.y << std::endl;
 		if (sfw::getKey('W'))rigidbody.force += AppliedForce;
-		if (sfw::getKey('A'))rigidbody.torque += 360;
+		if (sfw::getKey('A'))rigidbody.torque += (720 * 2);
 		//if (sfw::getKey('S'))rigidbody.force += { 0, -100 };
-		if (sfw::getKey('D'))rigidbody.torque += -360;
+		if (sfw::getKey('D'))rigidbody.torque += (-720 * 2);
 		
 		DrawMatrix(transform.getGlobalTransform(), 45);
 		rigidbody.integrate(transform, dt);
