@@ -9,9 +9,9 @@ vec2 operator+(const vec2 &lhs, const vec2 &rhs) {
 	result.x = lhs.x + rhs.x;
 	result.y = lhs.y + rhs.y;
 
-	//return result;
+	return result;
 
-	return{ lhs.x + rhs.x, lhs.y + rhs.y };
+	//return{ lhs.x + rhs.x, lhs.y + rhs.y };
 }
 
 
@@ -44,13 +44,15 @@ vec2 & operator*( float lhs, const vec2 & rhs)
 	return result;
 }
 
-vec2 operator/(const vec2 &lhs, const vec2 &rhs) {
+vec2 & operator/(const vec2 & lhs,  float rhs)
+{
 	vec2 result;
-	result.x = lhs.x / rhs.x;
-	result.y = lhs.x / rhs.x;
+	result.x = lhs.x / rhs;
+	result.y = lhs.y / rhs;
 
 	return result;
 }
+
 
 vec2 & operator-(const vec2 & lhs, const vec2 & rhs)
 {
@@ -143,8 +145,8 @@ vec2 max(const vec2 &a, const vec2 &b)
 }
 
 vec2 &operator+=(vec2 &lhs, const vec2 &rhs) {
-	lhs.x += rhs.x;
-	lhs.y += rhs.y;
+	/*lhs.x += rhs.x;
+	lhs.y += rhs.y;*/
 
 	lhs = lhs + rhs;
 
@@ -152,15 +154,15 @@ vec2 &operator+=(vec2 &lhs, const vec2 &rhs) {
 }
 
 vec2 &operator-=(vec2 &lhs, const vec2 &rhs) {
-	lhs.x -= rhs.x;
-	lhs.y -= rhs.y;
+	//lhs.x -= rhs.x;
+	//lhs.y -= rhs.y;
 
 	lhs = lhs - rhs;
 
 	return lhs;
 }
 
-vec2 &operator*=(vec2 &lhs, const float rhs) {
+vec2 &operator*=(vec2 &lhs,  float rhs) {
 	lhs.x *= rhs;
 	lhs.y *= rhs;
 
@@ -169,7 +171,7 @@ vec2 &operator*=(vec2 &lhs, const float rhs) {
 	return lhs;
 }
 
-vec2 &operator/=(vec2 &lhs, const float rhs) {
+vec2 &operator/=(vec2 &lhs,  float rhs) {
 	lhs.x /= rhs;
 	lhs.y /= rhs;
 

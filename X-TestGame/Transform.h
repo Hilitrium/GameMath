@@ -1,5 +1,6 @@
 #pragma once
 #include "mat3.h"
+#include "vec2.h"
 
 class Transform
 {
@@ -10,12 +11,15 @@ public:
 	Transform();
 	Transform *e_Parent;
 
+	//Transform(vec2 a_pos = {0,0})
+
 	mat3 getLocalTransform() const;
 	mat3 getGlobalTransform() const;
 	
 };
 
 void DrawMatrix(const mat3 &t, float drawing_Scale);
+//void DrawTexture(unsigned sprite, const mat3 &t);
 
 //Transform::Transform() {
 //	position = vec2{ 0,0 };

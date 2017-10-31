@@ -129,11 +129,14 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="myGuy.cpp" />
     <ClCompile Include="Person.cpp" />
+    <ClCompile Include="shapes.cpp" />
     <ClCompile Include="Transform.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="myGuy.h" />
     <ClInclude Include="person.h" />
+    <ClInclude Include="Rigidbody.h" />
+    <ClInclude Include="shapes.h" />
     <ClInclude Include="Transform.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

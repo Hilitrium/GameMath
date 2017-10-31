@@ -1,9 +1,44 @@
 
 #include "sfwdraw.h"
 #include "Transform.h"
-int main() 
+#include "Rigidbody.h"
+#include <iostream>
+#include <cmath>
+#include <string>
+#include <cstring>
+#include <cassert>
+int main()
 {
-	sfw::initContext(800,800);
+	sfw::initContext();
+
+	Transform transform;
+	Rigidbody rigidbody;
+
+	transform.position = vec2{ 400, 300 };
+
+	while (sfw::stepContext())
+	{
+		float dt = sfw::getDeltaTime();
+
+		//rigidbody.force = { 0,-1 };//gravity
+
+		//moving jets
+		vec2 AppliedForce = transform.getGlobalTransform()[1].xy * 50;
+		//std::cout << "X:" << AppliedForce.x << "Y: " << AppliedForce.y << std::endl;
+		if (sfw::getKey('W'))rigidbody.force += AppliedForce;
+		if (sfw::getKey('A'))rigidbody.torque += 360;
+		//if (sfw::getKey('S'))rigidbody.force += { 0, -100 };
+		if (sfw::getKey('D'))rigidbody.torque += -360;
+		
+		DrawMatrix(transform.getGlobalTransform(), 45);
+		rigidbody.integrate(transform, dt);
+		
+		
+	}
+
+	sfw::termContext();
+
+	/*sfw::initContext(800,800);
 
 	Transform myTrans;
 	myTrans.position = vec2{ 400,300 };
@@ -17,7 +52,7 @@ int main()
 		DrawMatrix(myTrans.getGlobalTransform(), 30);
 	}
 
-	sfw::termContext();
+	sfw::termContext();*/
 }
 
 //#include "sfwdraw.h"
