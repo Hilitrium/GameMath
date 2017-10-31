@@ -1,6 +1,0 @@
-﻿  Transform.cpp
-  Generating Code...
-c:\users\s179063\source\repos\oop\gamemath\x-testgame\transform.cpp(18): warning C4715: 'Transform::getGlobalTransform': not all control paths return a value
-  Skipping... (no relevant changes detected)
-  main.cpp
-LINK : fatal error LNK1104: cannot open file 'sfw.lib'
