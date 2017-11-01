@@ -23,3 +23,10 @@ Collision intersect_AABB(const AABB & A, const AABB & B)
 
 	return xres.penetrationDepth < yres.penetrationDepth ? xres : yres;
 }
+
+void dynamic_resolution(vec2 & Apos, vec2 & Avel, vec2 & Bpos, vec2 & Bvel, const Collision & hit, float elasticity)
+{
+	float j;
+
+	//vec2 fAvel = Avel + (j / Amass) * normal;
+}
