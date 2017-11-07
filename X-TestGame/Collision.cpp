@@ -24,9 +24,37 @@ Collision intersect_AABB(const AABB & A, const AABB & B)
 	return xres.penetrationDepth < yres.penetrationDepth ? xres : yres;
 }
 
-void dynamic_resolution(vec2 & Apos, vec2 & Avel, vec2 & Bpos, vec2 & Bvel, const Collision & hit, float elasticity)
-{
-	float j;
+Collision intersect_circle(const circle & A, const circle & B) {
+	Collision ret;
+	ret.axis = norm(B.position - A.position);
+	ret.handedness = -1;
 
-	//vec2 fAvel = Avel + (j / Amass) * normal;
+	float Ap = dot(ret.axis, A.position);
+	float Bp = dot(ret.axis, B.position);
+
+	float Amin = Ap - A.radius;
+	float Amax = Ap + A.radius;
+
+	float Bmin = Bp - B.radius;
+	float Bmax = Bp + B.radius;
+
+	ret.penetrationDepth = intersect_1D(Amin, Amax, Bmin, Bmax).penetrationDepth;
+
+	return ret;
+}
+
+void static_resolution(vec2 & pos, vec2 & vel, const Collision & hit, float elasticity) {
+	// for position, we need to correct:
+	pos += hit.axis * hit.handedness * hit.penetrationDepth;
+	
+	// for velocity, we need to reflect:
+	vel = -reflect(vel, hit.axis*hit.handedness) * elasticity;
+}
+
+void dynamic_resolution(vec2 & Apos, vec2 & Avel, float Amass, vec2 & Bpos, vec2 & Bvel, float Bmass, const Collision & hit, float elasticity){
+	vec2 normal = hit.axis * hit.handedness;
+
+	vec2 Rvel = Avel - Bvel;
+
+	float j = -(1 + elasticity)*dot(Rvel, normal) / dot(normal, normal*(1 / Amass + 1 / Bmass));
 }

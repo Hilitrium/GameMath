@@ -1,11 +1,5 @@
 #include "shapes.h"
-#include "vec3.h"
-#include "mat3.h"
 #include <cmath>
-
-
-
-
 
 
 AABB operator*(const mat3 &M, const AABB &B) {

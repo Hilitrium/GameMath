@@ -1,5 +1,6 @@
 #pragma once
 #include "mat3.h"
+#include "vec2.h"
 
 struct AABB {
 	vec2 position;
