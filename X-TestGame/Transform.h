@@ -19,6 +19,7 @@ public:
 };
 
 void DrawMatrix(const mat3 &t, float drawing_Scale);
+void DrawTexture(unsigned sprite, const mat3 &t);
 //void DrawTexture(unsigned sprite, const mat3 &t);
 
 //Transform::Transform() {

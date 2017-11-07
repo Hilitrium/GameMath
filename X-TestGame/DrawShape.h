@@ -3,4 +3,4 @@
 #include "shapes.h"
 
 void drawCircle(const circle &C);
-void drawAABB(const &box, int color);
+void drawAABB(const AABB &box, int color);

@@ -17,6 +17,12 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "X-TestGame", "X-TestGame\X-
 		{655D0BCF-4775-47E8-977C-2DBD1AE311D7} = {655D0BCF-4775-47E8-977C-2DBD1AE311D7}
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PhysicsAssessment", "PhysicsAssessment\PhysicsAssessment.vcxproj", "{9785A042-5335-49A9-8B67-E985EC9334EB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{655D0BCF-4775-47E8-977C-2DBD1AE311D7} = {655D0BCF-4775-47E8-977C-2DBD1AE311D7}
+		{050336D7-4B91-4A63-AD03-59B4A6372FAA} = {050336D7-4B91-4A63-AD03-59B4A6372FAA}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -57,6 +63,14 @@ Global
 		{050336D7-4B91-4A63-AD03-59B4A6372FAA}.Release|x64.Build.0 = Release|x64
 		{050336D7-4B91-4A63-AD03-59B4A6372FAA}.Release|x86.ActiveCfg = Release|Win32
 		{050336D7-4B91-4A63-AD03-59B4A6372FAA}.Release|x86.Build.0 = Release|Win32
+		{9785A042-5335-49A9-8B67-E985EC9334EB}.Debug|x64.ActiveCfg = Debug|x64
+		{9785A042-5335-49A9-8B67-E985EC9334EB}.Debug|x64.Build.0 = Debug|x64
+		{9785A042-5335-49A9-8B67-E985EC9334EB}.Debug|x86.ActiveCfg = Debug|Win32
+		{9785A042-5335-49A9-8B67-E985EC9334EB}.Debug|x86.Build.0 = Debug|Win32
+		{9785A042-5335-49A9-8B67-E985EC9334EB}.Release|x64.ActiveCfg = Release|x64
+		{9785A042-5335-49A9-8B67-E985EC9334EB}.Release|x64.Build.0 = Release|x64
+		{9785A042-5335-49A9-8B67-E985EC9334EB}.Release|x86.ActiveCfg = Release|Win32
+		{9785A042-5335-49A9-8B67-E985EC9334EB}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

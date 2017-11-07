@@ -1,3 +1,105 @@
-﻿  main.cpp
-  X-TestGame.vcxproj -> C:\Users\s179063\Source\Repos\GameMath3\Debug\X-TestGame.exe
-  X-TestGame.vcxproj -> C:\Users\s179063\Source\Repos\GameMath3\Debug\X-TestGame.pdb (Partial PDB)
+﻿  shapes.cpp
+  main.cpp
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(10): error C2039: 'draw': is not a member of 'Player'
+  c:\users\s179063\source\repos\gamemath3\x-testgame\person.h(8): note: see declaration of 'Player'
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(15): error C2065: 'Wall': undeclared identifier
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(15): error C2146: syntax error: missing ';' before identifier 'walls'
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(15): error C2065: 'walls': undeclared identifier
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(16): error C2065: 'walls': undeclared identifier
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(16): error C2228: left of '.transform' must have class/struct/union
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(16): error C2228: left of '.position' must have class/struct/union
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(17): error C2065: 'walls': undeclared identifier
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(17): error C2228: left of '.transform' must have class/struct/union
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(17): error C2228: left of '.dimension' must have class/struct/union
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(18): error C2065: 'walls': undeclared identifier
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(18): error C2228: left of '.collider' must have class/struct/union
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(18): error C2228: left of '.box' must have class/struct/union
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(18): error C2228: left of '.extents' must have class/struct/union
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(19): error C2065: 'walls': undeclared identifier
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(19): error C2228: left of '.sprite' must have class/struct/union
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(19): error C2228: left of '.handle' must have class/struct/union
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(21): error C2065: 'walls': undeclared identifier
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(21): error C2228: left of '.transform' must have class/struct/union
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(21): error C2228: left of '.position' must have class/struct/union
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(22): error C2065: 'walls': undeclared identifier
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(22): error C2228: left of '.transform' must have class/struct/union
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(22): error C2228: left of '.dimension' must have class/struct/union
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(23): error C2065: 'walls': undeclared identifier
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(23): error C2228: left of '.collider' must have class/struct/union
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(23): error C2228: left of '.box' must have class/struct/union
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(23): error C2228: left of '.extents' must have class/struct/union
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(24): error C2065: 'walls': undeclared identifier
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(24): error C2228: left of '.sprite' must have class/struct/union
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(24): error C2228: left of '.handle' must have class/struct/union
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(26): error C2065: 'Ball': undeclared identifier
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(26): error C2146: syntax error: missing ';' before identifier 'ball'
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(26): error C2065: 'ball': undeclared identifier
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(27): error C2065: 'ball': undeclared identifier
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(27): error C2228: left of '.transform' must have class/struct/union
+  c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(27): note: type is 'unknown-type'
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(27): error C2228: left of '.position' must have class/struct/union
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(28): error C2065: 'ball': undeclared identifier
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(28): error C2228: left of '.sprite' must have class/struct/union
+  c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(28): note: type is 'unknown-type'
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(28): error C2228: left of '.handle' must have class/struct/union
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(29): error C2065: 'ball': undeclared identifier
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(29): error C2228: left of '.transform' must have class/struct/union
+  c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(29): note: type is 'unknown-type'
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(29): error C2228: left of '.dimension' must have class/struct/union
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(30): error C2065: 'ball': undeclared identifier
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(30): error C2228: left of '.collider' must have class/struct/union
+  c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(30): note: type is 'unknown-type'
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(30): error C2228: left of '.box' must have class/struct/union
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(30): error C2228: left of '.extents' must have class/struct/union
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(31): error C2065: 'ball': undeclared identifier
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(31): error C2228: left of '.rigidbody' must have class/struct/union
+  c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(31): note: type is 'unknown-type'
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(31): error C2228: left of '.velocity' must have class/struct/union
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(32): error C2065: 'ball': undeclared identifier
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(32): error C2228: left of '.rigidbody' must have class/struct/union
+  c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(32): note: type is 'unknown-type'
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(32): error C2228: left of '.drag' must have class/struct/union
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(39): error C2039: 'controller': is not a member of 'Player'
+  c:\users\s179063\source\repos\gamemath3\x-testgame\person.h(8): note: see declaration of 'Player'
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(39): error C2228: left of '.poll' must have class/struct/union
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(43): error C2065: 'ball': undeclared identifier
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(43): error C2228: left of '.rigidbody' must have class/struct/union
+  c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(43): note: type is 'unknown-type'
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(43): error C2228: left of '.integrate' must have class/struct/union
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(43): error C2228: left of '.transform' must have class/struct/union
+  c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(43): note: type is 'unknown-type'
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(47): error C2065: 'ball': undeclared identifier
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(47): error C2228: left of '.sprite' must have class/struct/union
+  c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(47): note: type is 'unknown-type'
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(47): error C2228: left of '.draw' must have class/struct/union
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(47): error C2228: left of '.transform' must have class/struct/union
+  c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(47): note: type is 'unknown-type'
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(49): error C2065: 'walls': undeclared identifier
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(49): error C2228: left of '.sprite' must have class/struct/union
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(49): error C2228: left of '.draw' must have class/struct/union
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(49): error C2228: left of '.transform' must have class/struct/union
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(54): error C2065: 'walls': undeclared identifier
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(54): error C3861: 'doCollision': identifier not found
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(55): error C2065: 'ball': undeclared identifier
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(55): error C2065: 'walls': undeclared identifier
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(55): error C3861: 'doCollision': identifier not found
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(58): error C2065: 'ball': undeclared identifier
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(58): error C3861: 'doCollision': identifier not found
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(63): error C2065: 'walls': undeclared identifier
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(63): error C2228: left of '.collider' must have class/struct/union
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(63): error C2228: left of '.getGlobalBox' must have class/struct/union
+c:\users\s179063\source\repos\gamemath3\x-testgame\main.cpp(63): error C2228: left of '.transform' must have class/struct/union
+  Person.cpp
+c:\users\s179063\source\repos\gamemath3\x-testgame\person.cpp(4): error C2039: 'update': is not a member of 'Player'
+  c:\users\s179063\source\repos\gamemath3\x-testgame\person.h(8): note: see declaration of 'Player'
+c:\users\s179063\source\repos\gamemath3\x-testgame\person.cpp(20): error C2065: 'speed': undeclared identifier
+c:\users\s179063\source\repos\gamemath3\x-testgame\person.cpp(22): error C2065: 'pos': undeclared identifier
+c:\users\s179063\source\repos\gamemath3\x-testgame\person.cpp(25): error C2039: 'draw': is not a member of 'Player'
+  c:\users\s179063\source\repos\gamemath3\x-testgame\person.h(8): note: see declaration of 'Player'
+c:\users\s179063\source\repos\gamemath3\x-testgame\person.cpp(26): error C2065: 'pos': undeclared identifier
+c:\users\s179063\source\repos\gamemath3\x-testgame\person.cpp(26): error C2228: left of '.x' must have class/struct/union
+  c:\users\s179063\source\repos\gamemath3\x-testgame\person.cpp(26): note: type is 'unknown-type'
+c:\users\s179063\source\repos\gamemath3\x-testgame\person.cpp(26): error C2228: left of '.y' must have class/struct/union
+  c:\users\s179063\source\repos\gamemath3\x-testgame\person.cpp(26): note: type is 'unknown-type'
+c:\users\s179063\source\repos\gamemath3\x-testgame\person.cpp(26): error C2660: 'sfw::drawCircle': function does not take 2 arguments
+  Generating Code...
