@@ -17,7 +17,7 @@ public:
 	float angularDrag;
 
 	Rigidbody() : velocity{ 0,0 }, acceleration{ 0,0 }, force{ 0,0 }, impulse{ 0,0 }, mass(1), drag(1),
-		angularVelocity(0), angularAcceleration(0), torque(0), angularDrag(.25f) {
+		angularVelocity(0), angularAcceleration(0), torque(0), angularDrag(.05f) {
 
 	}
 
@@ -27,7 +27,7 @@ public:
 		//linear motion
 		acceleration = force / mass;
 		vec2 tempImp = impulse / mass;
-		vec2 tempAccel = acceleration * dt;
+		vec2 tempAccel = force / mass * dt;
 		vec2 tempImpAccel = tempAccel + tempImp;
 		velocity += tempImpAccel;
 		vec2 tempVel = velocity * dt;

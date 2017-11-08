@@ -10,6 +10,7 @@ int main() {
 	player.transform.dimension = vec2{ 64, 64 };
 	player.transform.position = vec2{ 400,300 };
 	player.collider.box.extents = { .5, .5 };
+	player.sprite.handle = sfw::loadTextureMap("res/Sprite.png");
 
 	Wall walls[2];
 	walls[0].transform.position = { 600,300 };
@@ -34,14 +35,14 @@ int main() {
 	{
 		float dt = sfw::getDeltaTime();
 
-		player.controller.poll(player.rigidbody, player.transform);
-
-
-		player.rigidbody.integrate(player.transform, dt);
+		//player.controller.poll(player.rigidbody, player.transform);
+		player.update(sfw::getDeltaTime());
+		player.draw();
+		//player.rigidbody.integrate(player.transform, dt);
 		ball.rigidbody.integrate(ball.transform, dt);
 
 
-		player.sprite.draw(player.transform);
+		//player.sprite.draw(player.transform);
 		ball.sprite.draw(ball.transform);
 		for (int i = 0; i < 2; ++i)
 			walls[i].sprite.draw(walls[i].transform);
@@ -55,9 +56,9 @@ int main() {
 
 		doCollision(player, ball);
 
-		drawAABB(player.collider.getGlobalBox(player.transform), MAGENTA);
-		for (int i = 0; i < 2; ++i)
-			drawAABB(walls[i].collider.getGlobalBox(walls[i].transform), RED);
+		//drawAABB(player.collider.getGlobalBox(player.transform), MAGENTA);
+		//for (int i = 0; i < 2; ++i)
+			//drawAABB(walls[i].collider.getGlobalBox(walls[i].transform), RED);
 	}
 	sfw::termContext();
 

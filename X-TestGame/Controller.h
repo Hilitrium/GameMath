@@ -1,5 +1,4 @@
 #pragma once
-#pragma once
 
 // controller -> rigidbody -> transform
 #include "transform.h"
@@ -15,7 +14,7 @@ public:
 	float speed;
 	float brakePower;
 
-	Controller() : turningSpeed(240), speed(120), brakePower(8)
+	Controller() : turningSpeed(6000), speed(300), brakePower(8)
 	{
 
 	}
@@ -23,9 +22,13 @@ public:
 	void poll(Rigidbody &rb, const Transform &t)
 	{
 
-		if (sfw::getKey('W'))rb.force +=
-			norm(t.getGlobalTransform()[1].xy) * speed;
-
+		if (sfw::getKey('W'))
+		{
+			vec2 normal = norm(t.getLocalTransform()[1].xy);
+			vec2 desiredForce = normal * speed;
+			rb.force += desiredForce;
+				
+		}
 		if (sfw::getKey('A'))rb.torque += turningSpeed;
 		if (sfw::getKey('D'))rb.torque += -turningSpeed;
 

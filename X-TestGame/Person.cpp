@@ -1,5 +1,5 @@
 #include"person.h"
-
+#include "DrawShape.h"
 bool doCollision(Player & player, const Wall & wall) {
 
 	auto hit = collides(player.transform, player.collider, wall.transform, wall.collider);
@@ -35,3 +35,16 @@ bool doCollision(Player &player, Ball &ball) {
 	}
 	return false;
 }
+
+void Player::update(float dt)
+{
+	rigidbody.integrate(transform, dt);
+	controller.poll(rigidbody,transform);
+}
+
+void Player::draw()
+{
+	sprite.draw(transform);
+	drawAABB(collider.getGlobalBox(transform), MAGENTA);
+}
+

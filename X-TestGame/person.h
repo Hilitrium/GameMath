@@ -12,6 +12,8 @@ public:
 	Collider collider;
 	Controller controller;
 	Sprite sprite;
+	void update(float dt);
+	void draw();
 };
 
 class Ball {
