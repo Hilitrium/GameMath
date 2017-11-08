@@ -10,5 +10,25 @@ public:
 	Transform transform;
 	Rigidbody rigidbody;
 	Collider collider;
+	Controller controller;
 	Sprite sprite;
 };
+
+class Ball {
+public:
+	Transform transform;
+	Rigidbody rigidbody;
+	Collider collider;
+	Sprite sprite;
+};
+
+class Wall{
+public:
+	Transform transform;
+	Collider collider;
+	Sprite sprite;
+};
+
+bool doCollision(Player &player, const Wall &wall);
+bool doCollision(Ball &ball, const Wall &wall);
+bool doCollision(Player &player, Ball &wall);
