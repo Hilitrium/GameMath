@@ -7,29 +7,119 @@ int main() {
 
 	Player player;
 
-	player.transform.dimension = vec2{ 64, 64 };
-	player.transform.position = vec2{ 400,300 };
+	player.transform.dimension = vec2{ 20, 34 };
+	player.transform.position = vec2{ 60,550 };
 	player.collider.box.extents = { .5, .5 };
-	player.sprite.handle = sfw::loadTextureMap("res/Sprite.png");
+	player.sprite.handle = sfw::loadTextureMap("res/Player.png");
 
-	Wall walls[2];
-	walls[0].transform.position = { 600,300 };
-	walls[0].transform.dimension = { 80,240 };
+	Wall walls[29];
+	walls[0].transform.position = { 0,0 };
+	walls[0].transform.dimension = { 40,1200 };
 	walls[0].collider.box.extents = { .5,.5 };
-//	walls[0].sprite.handle = sfw::loadTextureMap("../resources/Giant_Tree.png");
+	walls[0].sprite.handle = sfw::loadTextureMap("res/BrickWall.png");
 
-	walls[1].transform.position = { 200,300 };
-	walls[1].transform.dimension = { 80,240 };
+	walls[1].transform.position = { 800, 20 };
+	walls[1].transform.dimension = { 40,1200 };
 	walls[1].collider.box.extents = { .5,.5 };
 	walls[1].sprite.handle = walls[0].sprite.handle;
 
+	walls[2].transform.position = { 500,600 };
+	walls[2].transform.dimension = { 690,40 };
+	walls[2].collider.box.extents = { .5,.5 };
+	walls[2].sprite.handle = walls[0].sprite.handle;
+
+	walls[3].transform.position = { 350,0 };
+	walls[3].transform.dimension = { 690,40 };
+	walls[3].collider.box.extents = { .5,.5 };
+	walls[3].sprite.handle = walls[0].sprite.handle;
+
+	walls[4].transform.position = { 0,230 };
+	walls[4].transform.dimension = { 300,20 };
+	walls[4].collider.box.extents = { .5,.5 };
+	walls[4].sprite.handle = walls[0].sprite.handle;
+
+	walls[5].transform.position = { 300,330 };
+	walls[5].transform.dimension = { 200,20 };
+	walls[5].collider.box.extents = { .5,.5 };
+	walls[5].sprite.handle = walls[0].sprite.handle;
+
+	walls[6].transform.position = { 0,230 };
+	walls[6].transform.dimension = { 300,20 };
+	walls[6].collider.box.extents = { .5,.5 };
+	walls[6].sprite.handle = walls[0].sprite.handle;
+
+	walls[7].transform.position = { 300,475 };
+	walls[7].transform.dimension = { 20,300 };
+	walls[7].collider.box.extents = { .5,.5 };
+	walls[7].sprite.handle = walls[0].sprite.handle;
+
+	walls[8].transform.position = { 200,395 };
+	walls[8].transform.dimension = { 20,150 };
+	walls[8].collider.box.extents = { .5,.5 };
+	walls[8].sprite.handle = walls[0].sprite.handle;
+
+	walls[9].transform.position = { 250,268 };
+	walls[9].transform.dimension = { 20,100 };
+	walls[9].collider.box.extents = { .5,.5 };
+	walls[9].sprite.handle = walls[0].sprite.handle;
+
+	walls[10].transform.position = { 400,245 };
+	walls[10].transform.dimension = { 20,200 };
+	walls[10].collider.box.extents = { .5,.5 };
+	walls[10].sprite.handle = walls[0].sprite.handle;
+
+	walls[11].transform.position = { 325,155 };
+	walls[11].transform.dimension = { 150,20 };
+	walls[11].collider.box.extents = { .5,.5 };
+	walls[11].sprite.handle = walls[0].sprite.handle;
+
+	walls[12].transform.position = { 260,130 };
+	walls[12].transform.dimension = { 20,50 };
+	walls[12].collider.box.extents = { .5,.5 };
+	walls[12].sprite.handle = walls[0].sprite.handle;
+
+	walls[13].transform.position = { 196,100 };
+	walls[13].transform.dimension = { 150,20 };
+	walls[13].collider.box.extents = { .5,.5 };
+	walls[13].sprite.handle = walls[0].sprite.handle;
+
+	walls[14].transform.position = { 196,100 };
+	walls[14].transform.dimension = { 150,20 };
+	walls[14].collider.box.extents = { .5,.5 };
+	walls[14].sprite.handle = walls[0].sprite.handle;
+
+	walls[14].transform.position = { 550,100 };
+	walls[14].transform.dimension = { 150,20 };
+	walls[14].collider.box.extents = { .5,.5 };
+	walls[14].sprite.handle = walls[0].sprite.handle;
+
+	walls[15].transform.position = { 550,55 };
+	walls[15].transform.dimension = { 20,75 };
+	walls[15].collider.box.extents = { .5,.5 };
+	walls[15].sprite.handle = walls[0].sprite.handle;
+
+	walls[16].transform.position = { 350,55 };
+	walls[16].transform.dimension = { 20,75 };
+	walls[16].collider.box.extents = { .5,.5 };
+	walls[16].sprite.handle = walls[0].sprite.handle;
+
+	walls[17].transform.position = { 485,149 };
+	walls[17].transform.dimension = { 20,75 };
+	walls[17].collider.box.extents = { .5,.5 };
+	walls[17].sprite.handle = walls[0].sprite.handle;
+
+	walls[18].transform.position = { 615,149 };
+	walls[18].transform.dimension = { 20,75 };
+	walls[18].collider.box.extents = { .5,.5 };
+	walls[18].sprite.handle = walls[0].sprite.handle;
+
 	Ball ball;
-	ball.transform.position = { 400,300 };
+//	ball.transform.position = { 400,300 };
 //	ball.sprite.handle = sfw::loadTextureMap("../resources/Gungeon.jpg");
-	ball.transform.dimension = { 32,32 };
-	ball.collider.box.extents = { .5,.5 };
-	ball.rigidbody.velocity = { 200,0 };
-	ball.rigidbody.drag = 0;
+//	ball.transform.dimension = { 32,32 };
+//	ball.collider.box.extents = { .5,.5 };
+//	ball.rigidbody.velocity = { 200,0 };
+//	ball.rigidbody.drag = 0;
 
 	while (sfw::stepContext())
 	{
@@ -39,17 +129,18 @@ int main() {
 		player.update(sfw::getDeltaTime());
 		player.draw();
 		//player.rigidbody.integrate(player.transform, dt);
-		ball.rigidbody.integrate(ball.transform, dt);
+		//ball.rigidbody.integrate(ball.transform, dt);
 
 
 		//player.sprite.draw(player.transform);
-		ball.sprite.draw(ball.transform);
-		for (int i = 0; i < 2; ++i)
+		//ball.sprite.draw(ball.transform);
+		for (int i = 0; i < 29; ++i)
 			walls[i].sprite.draw(walls[i].transform);
 
 
-		for (int i = 0; i < 2; ++i)
+		for (int i = 0; i < 29; ++i)
 		{
+			//drawAABB(walls[i].collider.getGlobalBox(walls[i].transform), CYAN);
 			doCollision(player, walls[i]);
 			doCollision(ball, walls[i]);
 		}

@@ -9,7 +9,9 @@ Transform::Transform()
 }
 mat3 Transform::getLocalTransform() const
 {
-	return translate(position)  * rotate(angle)* scale(dimension);
+	mat3 retval;
+	retval = translate(position)   * rotate(angle) * scale(dimension);
+	return retval;
 }
 
 mat3 Transform::getGlobalTransform() const

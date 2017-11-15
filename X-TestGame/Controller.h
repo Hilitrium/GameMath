@@ -32,7 +32,7 @@ public:
 		if (sfw::getKey('A'))rb.torque += turningSpeed;
 		if (sfw::getKey('D'))rb.torque += -turningSpeed;
 
-		if (sfw::getKey(' ')) //breaking force
+		if (sfw::getKey('S')) //breaking force
 		{
 			rb.force += (-1 * rb.velocity) * brakePower;
 			rb.torque += -rb.angularVelocity * brakePower;

@@ -4,7 +4,7 @@ Collision intersect_1D(float Amin, float Amax, float Bmin, float Bmax)
 {
 	Collision ret;
 
-	float lPD = Bmax - Amax;
+	float lPD = Bmax - Amin;
 	float rPD = Amax - Bmin;
 
 	ret.penetrationDepth = min(lPD, rPD);
