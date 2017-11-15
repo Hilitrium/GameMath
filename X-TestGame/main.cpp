@@ -12,7 +12,7 @@ int main() {
 	player.collider.box.extents = { .5, .5 };
 	player.sprite.handle = sfw::loadTextureMap("res/Player.png");
 
-	Wall walls[29];
+	Wall walls[25];
 	walls[0].transform.position = { 0,0 };
 	walls[0].transform.dimension = { 40,1200 };
 	walls[0].collider.box.extents = { .5,.5 };
@@ -24,7 +24,7 @@ int main() {
 	walls[1].sprite.handle = walls[0].sprite.handle;
 
 	walls[2].transform.position = { 500,600 };
-	walls[2].transform.dimension = { 690,40 };
+	walls[2].transform.dimension = { 1200,40 };
 	walls[2].collider.box.extents = { .5,.5 };
 	walls[2].sprite.handle = walls[0].sprite.handle;
 
@@ -113,6 +113,36 @@ int main() {
 	walls[18].collider.box.extents = { .5,.5 };
 	walls[18].sprite.handle = walls[0].sprite.handle;
 
+	walls[19].transform.position = { 615,190 };
+	walls[19].transform.dimension = { 150,20 };
+	walls[19].collider.box.extents = { .5,.5 };
+	walls[19].sprite.handle = walls[0].sprite.handle;
+
+	walls[20].transform.position = { 551,225 };
+	walls[20].transform.dimension = { 20,75 };
+	walls[20].collider.box.extents = { .5,.5 };
+	walls[20].sprite.handle = walls[0].sprite.handle;
+	
+	walls[21].transform.position = { 510,250 };
+	walls[21].transform.dimension = { 75,20 };
+	walls[21].collider.box.extents = { .5,.5 };
+	walls[21].sprite.handle = walls[0].sprite.handle;
+
+	walls[22].transform.position = { 485,350 };
+	walls[22].transform.dimension = { 20,200 };
+	walls[22].collider.box.extents = { .5,.5 };
+	walls[22].sprite.handle = walls[0].sprite.handle;
+
+	walls[23].transform.position = { 430,450 };
+	walls[23].transform.dimension = { 130,20 };
+	walls[23].collider.box.extents = { .5,.5 };
+	walls[23].sprite.handle = walls[0].sprite.handle;
+
+	walls[24].transform.position = { 680,325 };
+	walls[24].transform.dimension = { 20,250 };
+	walls[24].collider.box.extents = { .5,.5 };
+	walls[24].sprite.handle = walls[0].sprite.handle;
+
 	Ball ball;
 //	ball.transform.position = { 400,300 };
 //	ball.sprite.handle = sfw::loadTextureMap("../resources/Gungeon.jpg");
@@ -134,11 +164,11 @@ int main() {
 
 		//player.sprite.draw(player.transform);
 		//ball.sprite.draw(ball.transform);
-		for (int i = 0; i < 29; ++i)
+		for (int i = 0; i < 25; ++i)
 			walls[i].sprite.draw(walls[i].transform);
 
 
-		for (int i = 0; i < 29; ++i)
+		for (int i = 0; i < 25; ++i)
 		{
 			//drawAABB(walls[i].collider.getGlobalBox(walls[i].transform), CYAN);
 			doCollision(player, walls[i]);

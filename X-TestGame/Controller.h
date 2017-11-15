@@ -14,7 +14,7 @@ public:
 	float speed;
 	float brakePower;
 
-	Controller() : turningSpeed(6000), speed(300), brakePower(8)
+	Controller() : turningSpeed(7500), speed(300), brakePower(8)
 	{
 
 	}
